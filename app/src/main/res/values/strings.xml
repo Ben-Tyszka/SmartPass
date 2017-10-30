@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SmartPass</string>
+    <string name="launch_screen_head">Welcome</string>
+    <string name="launch_screen_sub">Let\'s get started&#8230;</string>
+    <string name="setup_1_intro">SmartPass works by taking information about you and turning it into long, secure, and easy to remember passwords</string>
+    <string name="setup_1_promt_1">First, we need some information about you</string>
+    <string name="privacylink">SmartPass stores your information locally on your device. You data is never transmitted to our servers. We may use third party services like Google Admob that collect/use your personal information\nIf you have any concerns, please read our full privacy policy <a href="https://sites.google.com/view/smartpass/home">here</a></string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

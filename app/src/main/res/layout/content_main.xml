@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="tyszka.io.smartpass.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <Button
+        android:text="Create New Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnGenerate"
+        android:elevation="14dp"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:background="#4dd0e1"
+        android:textAlignment="center"
+        android:typeface="normal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:textAllCaps="false"/>
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:id="@+id/passwordDisplay"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Created Password:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cptv"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:textSize="16sp" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordDisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:id="@+id/tvEasyToRead" />
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bannerOne"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-5835693865573663/8385366805"
+        android:layout_gravity="bottom|center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:text="Clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:id="@+id/btnClearPassword"
+        android:elevation="14dp"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:background="#ef5350"
+        android:textAlignment="center"
+        android:typeface="normal"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:layout_below="@+id/btnGenerate"
+        android:layout_alignLeft="@+id/btnGenerate"
+        android:layout_alignStart="@+id/btnGenerate"/>
+
+    <Button
+        android:text="Copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:id="@+id/btnCopyPassword"
+        android:elevation="14dp"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:background="#00c853"
+        android:textAlignment="center"
+        android:typeface="normal"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:layout_below="@+id/btnGenerate"
+        android:layout_alignRight="@+id/btnGenerate"
+        android:layout_alignEnd="@+id/btnGenerate"/>
+</RelativeLayout>

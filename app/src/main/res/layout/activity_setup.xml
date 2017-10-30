@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tyszka.io.smartpass.SetupActivity">
+
+    <TextView
+        android:text="@string/setup_1_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:visibility="visible"/>
+
+    <TextView
+        android:text="@string/setup_1_promt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="154dp"
+        android:id="@+id/textView3"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:visibility="visible"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords|textPersonName"
+        android:ems="10"
+        android:layout_marginTop="84dp"
+        android:id="@+id/editText_lastName"
+        android:hint="Last Name"
+        android:visibility="gone"
+        android:layout_below="@+id/editText_firstName"
+        android:layout_alignLeft="@+id/editText_firstName"
+        android:layout_alignStart="@+id/editText_firstName"
+        android:maxLength="20"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords|textPersonName"
+        android:ems="10"
+        android:layout_marginTop="32dp"
+        android:id="@+id/editText_firstName"
+        android:hint="First Name"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:maxLength="22"/>
+
+    <Button
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonNext_1"
+        android:visibility="gone"
+        android:theme="@style/ButtonNext"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+    <CheckBox
+        android:text="I have read and agree to our Privacy Policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_lastName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132dp"
+        android:visibility="gone"
+        android:id="@+id/checkBox_TosPS" />
+</RelativeLayout>

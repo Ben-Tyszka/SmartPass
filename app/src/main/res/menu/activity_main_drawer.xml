@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_FAQ"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="FAQ's"/>
+        <item
+            android:id="@+id/nav_resetData"
+            android:icon="@android:drawable/ic_menu_delete"
+            android:title="Clear Data" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="Privacy Policy" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="About" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="Share"/>
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@android:drawable/ic_menu_upload"
+                android:title="Send Feedback" />
+        </menu>
+    </item>
+
+</menu>

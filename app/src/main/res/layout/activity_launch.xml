@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_launch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tyszka.io.smartpass.LaunchActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/launch_screen_head"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:id="@+id/launch_screen_head"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/launch_screen_sub"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:id="@+id/launch_screen_sub"
+        android:layout_below="@+id/launch_screen_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="208dp" />
+</RelativeLayout>
